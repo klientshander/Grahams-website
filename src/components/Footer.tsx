@@ -28,7 +28,7 @@ export default function Footer({ onSelectCategory }: FooterProps) {
     {
       heading: "Customer Care",
       links: [
-        { name: "Free Delivery Over £45", href: "#shop" },
+        { name: "Free Delivery Over ₱45", href: "#shop" },
         { name: "Returns & Guarantees", href: "#contact" },
         { name: "Gift Wrapping Service", href: "#shop" },
         { name: "Contact Our Edinburgh Deli", href: "#contact" },

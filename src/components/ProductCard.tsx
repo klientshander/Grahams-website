@@ -60,7 +60,7 @@ export default function ProductCard({
 
         <div className="flex items-center justify-between mt-4 pt-3 border-t border-[#F5D9B8]/50">
           <span className="font-black text-[#E8590C] text-lg">
-            £{product.price.toFixed(2)}
+            ₱{product.price.toFixed(2)}
           </span>
           <button
             onClick={handleAdd}

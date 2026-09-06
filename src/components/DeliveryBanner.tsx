@@ -15,7 +15,7 @@ export default function DeliveryBanner({ onShopGiftSets }: DeliveryBannerProps) 
             Free UK Delivery
           </p>
           <h2 className="text-4xl sm:text-5xl font-black text-[#FFF8F0] leading-tight">
-            Orders over <span className="text-[#E8590C]">£45</span> ship complimentary.
+            Orders over <span className="text-[#E8590C]">₱45</span> ship complimentary.
           </h2>
           <p
             className="text-[#F5D9B8] text-base sm:text-lg leading-relaxed"

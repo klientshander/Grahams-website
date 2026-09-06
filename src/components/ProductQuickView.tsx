@@ -89,7 +89,7 @@ export default function ProductQuickView({
 
           <div className="pt-4 flex items-center justify-between border-t border-[#F5D9B8]">
             <span className="text-2xl font-black text-[#E8590C]">
-              £{product.price.toFixed(2)}
+              ₱{product.price.toFixed(2)}
             </span>
             <button
               onClick={() => {

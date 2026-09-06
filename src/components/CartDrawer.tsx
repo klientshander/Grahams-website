@@ -114,7 +114,7 @@ export default function CartDrawer({
                     {item.subtitle}
                   </p>
                   <p className="font-black text-[#E8590C] text-sm mt-1">
-                    £{(item.price * item.qty).toFixed(2)}
+                    ₱{(item.price * item.qty).toFixed(2)}
                   </p>
                 </div>
 
@@ -167,12 +167,12 @@ export default function CartDrawer({
             <div className="space-y-2">
               <div className="flex justify-between items-center text-xs font-bold text-[#7C3813]">
                 <span>Shipping</span>
-                <span>{cartTotal >= 45 ? "FREE" : "£4.50"}</span>
+                <span>{cartTotal >= 45 ? "FREE" : "₱4.50"}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="font-bold text-[#7C3813] text-sm">Subtotal</span>
                 <span className="font-black text-[#1A0A00] text-xl">
-                  £{cartTotal.toFixed(2)}
+                  ₱{cartTotal.toFixed(2)}
                 </span>
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function CartDrawer({
               <div className="text-xs text-[#E8590C] font-bold bg-[#E8590C]/10 rounded-xl px-4 py-2.5 flex items-center gap-2">
                 <span>💡</span>
                 <span>
-                  Add £{(45 - cartTotal).toFixed(2)} more for free UK delivery!
+                  Add ₱{(45 - cartTotal).toFixed(2)} more for free UK delivery!
                 </span>
               </div>
             ) : (
@@ -195,7 +195,7 @@ export default function CartDrawer({
               onClick={onCheckout}
               className="w-full bg-[#E8590C] hover:bg-[#C44A08] text-[#FFF8F0] py-4 rounded-full font-black text-sm tracking-wider uppercase transition-all duration-200 shadow-lg hover:shadow-xl active:scale-[0.99] cursor-pointer"
             >
-              Proceed to Checkout · £
+              Proceed to Checkout · ₱
               {(cartTotal + (cartTotal >= 45 ? 0 : 4.5)).toFixed(2)}
             </button>
           </div>
