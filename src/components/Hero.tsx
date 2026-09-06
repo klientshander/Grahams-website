@@ -7,7 +7,7 @@ export default function Hero() {
           {/* Left Hero Content */}
           <div className="lg:col-span-6 space-y-6 z-10 pt-4 sm:pt-8">
             <div className="inline-block bg-white text-[#E8590C] text-[11px] font-black tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-md">
-              EST. 1987 · EDINBURGH
+              EST. 2016 · ESCALANTE CITY
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.08] text-white tracking-tight">
