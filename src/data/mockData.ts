@@ -1,0 +1,181 @@
+import { Category, Product, JournalPost, Stockist } from "../types";
+
+export const CATEGORIES: Category[] = [
+  {
+    id: "preserves",
+    label: "Preserves & Jams",
+    filterKey: "Preserves & Jams",
+    count: 24,
+    img: "https://images.unsplash.com/photo-1590083052217-3c5ca32f3906?w=600&h=600&fit=crop&auto=format",
+  },
+  {
+    id: "biscuits",
+    label: "Biscuits & Cookies",
+    filterKey: "Biscuits & Cookies",
+    count: 18,
+    img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=600&fit=crop&auto=format",
+  },
+  {
+    id: "pantry",
+    label: "Pantry Staples",
+    filterKey: "Pantry Staples",
+    count: 31,
+    img: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&auto=format",
+  },
+  {
+    id: "gifts",
+    label: "Gift Sets",
+    filterKey: "Gift Sets",
+    count: 9,
+    img: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&h=600&fit=crop&auto=format",
+  },
+];
+
+export const FILTER_TABS = [
+  { label: "All", value: "All" },
+  { label: "Preserves & Jams", value: "Preserves & Jams" },
+  { label: "Biscuits & Cookies", value: "Biscuits & Cookies" },
+  { label: "Pantry Staples", value: "Pantry Staples" },
+  { label: "Gift Sets", value: "Gift Sets" },
+];
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 1,
+    name: "Seville Orange Marmalade",
+    subtitle: "Classic Cut · 340g",
+    category: "Preserves & Jams",
+    price: 7.50,
+    badge: "Bestseller",
+    img: "https://images.unsplash.com/photo-1545588155-e35ed2608eac?w=600&h=600&fit=crop&auto=format",
+    description: "Hand-cut bitter Seville oranges cooked in copper pans with raw cane sugar. Rich, punchy, and aromatic with a deeply satisfying citrus peel bite.",
+    ingredients: "Seville Oranges (55%), Unrefined Cane Sugar, Lemon Juice, Fruit Pectin.",
+    origin: "Prepared in Edinburgh, Scotland",
+  },
+  {
+    id: 2,
+    name: "Dark Chocolate Digestives",
+    subtitle: "200g · 12 biscuits",
+    category: "Biscuits & Cookies",
+    price: 5.95,
+    badge: "New",
+    img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=600&fit=crop&auto=format",
+    description: "Stoneground Scottish wholemeal flour and churned farmhouse butter baked to a golden crisp, dipped generously in 70% single-origin dark chocolate.",
+    ingredients: "Scottish Wholemeal Wheat Flour, 70% Dark Chocolate (Cocoa Mass, Sugar, Cocoa Butter), Salted Butter, Raw Demerara Sugar, Sea Salt.",
+    origin: "Baked in Aberdeenshire",
+  },
+  {
+    id: 3,
+    name: "Wildflower Honey",
+    subtitle: "Raw · Unfiltered · 500g",
+    category: "Pantry Staples",
+    price: 12.00,
+    badge: null,
+    img: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop&auto=format",
+    description: "Cold-extracted from bees foraging across Scottish heather moorlands and summer meadow blooms. Intensely floral, thick, and unprocessed.",
+    ingredients: "100% Pure Raw Scottish Wildflower Honey.",
+    origin: "Harvested in Perthshire",
+  },
+  {
+    id: 4,
+    name: "Strawberry & Champagne Preserve",
+    subtitle: "Garden Picked · 340g",
+    category: "Preserves & Jams",
+    price: 6.50,
+    badge: null,
+    img: "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=600&h=600&fit=crop&auto=format",
+    description: "Ripe Scottish strawberries simmered with Marc de Champagne. A delicate, bright preserve crafted for afternoon tea and warm scones.",
+    ingredients: "Scottish Strawberries (60%), Cane Sugar, Marc de Champagne (3%), Lemon Juice, Natural Pectin.",
+    origin: "Prepared in Edinburgh, Scotland",
+  },
+  {
+    id: 5,
+    name: "Triple Chocolate Oat Shortbread",
+    subtitle: "Butter · Vanilla · 180g",
+    category: "Biscuits & Cookies",
+    price: 6.25,
+    badge: "Limited",
+    img: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&h=600&fit=crop&auto=format",
+    description: "Melt-in-the-mouth all-butter shortbread infused with toasted pinhead oats, white, milk, and dark chocolate chunks with Madagascar Bourbon vanilla.",
+    ingredients: "Butter (Milk), Wheat Flour, Rolled Oats, Chocolate Blend (30%), Sugar, Sea Salt.",
+    origin: "Baked in Edinburgh, Scotland",
+  },
+  {
+    id: 6,
+    name: "Store Cupboard Essentials Hamper",
+    subtitle: "Gift Box · 6 items",
+    category: "Gift Sets",
+    price: 38.00,
+    badge: "Gift",
+    img: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&h=600&fit=crop&auto=format",
+    description: "The definitive Graham's starter collection in our signature embossed wooden crate. Includes Seville Marmalade, Raw Heather Honey, Dark Chocolate Digestives, Sea Salt Oatcakes, Piccalilli, and Breakfast Blend Tea.",
+    ingredients: "Includes 6 full-sized Graham's signature pantry items presented with ribbon and gift card.",
+    origin: "Hand-packed in Edinburgh, Scotland",
+  },
+  {
+    id: 7,
+    name: "Artisan Heather Honey Mustard",
+    subtitle: "Coarse Grain · 200g",
+    category: "Pantry Staples",
+    price: 5.50,
+    badge: "New",
+    img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&h=600&fit=crop&auto=format",
+    description: "Coarsely crushed black and yellow mustard seeds soaked in cider vinegar and sweetened with raw heather honey. Perfect with roast beef or mature cheddar.",
+    ingredients: "Mustard Seeds (42%), Cider Vinegar, Heather Honey (18%), Sea Salt, Spices.",
+    origin: "Handcrafted in the Scottish Borders",
+  },
+  {
+    id: 8,
+    name: "Scottish Highland Afternoon Tea Crate",
+    subtitle: "Gift Box · 4 items + Tea",
+    category: "Gift Sets",
+    price: 29.50,
+    badge: "Gift",
+    img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&h=600&fit=crop&auto=format",
+    description: "Everything needed for the ultimate British afternoon tea: all-butter shortbread, strawberry preserve, clotted cream fudge, and 25 whole leaf tea pyramids.",
+    ingredients: "Curated tea & confection gift box.",
+    origin: "Edinburgh, Scotland",
+  },
+];
+
+export const BADGE_COLORS: Record<string, string> = {
+  Bestseller: "bg-[#1A0A00] text-[#FFF8F0]",
+  New: "bg-[#FFF8F0] text-[#E8590C]",
+  Limited: "bg-[#7C3813] text-[#FFF8F0]",
+  Gift: "bg-[#F5D9B8] text-[#7C3813]",
+};
+
+export const JOURNAL_POSTS: JournalPost[] = [
+  {
+    id: 1,
+    date: "September 2026",
+    title: "The Art of Copper-Pan Marmalade",
+    summary: "Why traditional open-pan boiling preserves the bright zest and essential oils of fresh Seville oranges.",
+    readTime: "4 min read",
+    img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 2,
+    date: "August 2026",
+    title: "Heather Season in the Scottish Borders",
+    summary: "Visiting our beekeeping partners as purple heather blooms across the Lammermuir Hills.",
+    readTime: "6 min read",
+    img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=400&fit=crop&auto=format",
+  },
+  {
+    id: 3,
+    date: "July 2026",
+    title: "Perfect Pairings: Cheese & Small Batch Preserves",
+    summary: "Our sommelier guide to pairing sharp British cheddars, blue cheeses, and creamy bries with fruit chutneys.",
+    readTime: "5 min read",
+    img: "https://images.unsplash.com/photo-1631379578550-7038263db699?w=600&h=400&fit=crop&auto=format",
+  },
+];
+
+export const STOCKISTS: Stockist[] = [
+  { name: "Graham's Flagship Deli", address: "14 George Street, Edinburgh EH2 2PF", phone: "0131 225 8900" },
+  { name: "Fortnum & Pantry Co.", address: "42 High Street, St Andrews KY16 9NT", phone: "01334 478 211" },
+  { name: "Borders Fine Provisions", address: "8 The Square, Kelso TD5 7HH", phone: "01573 224 502" },
+  { name: "Marylebone Larder", address: "29 Chiltern Street, London W1U 7PW", phone: "020 7486 3120" },
+];
+
