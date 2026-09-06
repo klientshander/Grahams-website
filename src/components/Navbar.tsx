@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import logo from "../../images/logo.png";
 
 interface NavbarProps {
   cartCount: number;
@@ -39,16 +40,12 @@ export default function Navbar({ cartCount, onOpenCart }: NavbarProps) {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-none group">
-          <span
-            className="font-black text-2xl sm:text-3xl tracking-tight text-white group-hover:text-[#F5D9B8] transition-colors drop-shadow-sm"
-            style={{ fontFamily: "'Nunito', sans-serif" }}
-          >
-            SHANDER'S
-          </span>
-          <span className="text-[10px] font-bold tracking-[0.25em] text-white/90 uppercase -mt-0.5">
-            Fine Foods
-          </span>
+        <a href="#" aria-label="Shander's Fine Foods home" className="block shrink-0">
+          <img
+            src={logo}
+            alt="Shander's Fine Foods"
+            className="h-16 w-16 rounded-full object-cover shadow-lg sm:h-20 sm:w-20"
+          />
         </a>
 
         {/* Desktop Navigation */}
